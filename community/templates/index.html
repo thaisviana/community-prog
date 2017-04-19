@@ -1,0 +1,46 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}"/>
+    <link href="{% static 'fonts/Pluto-Regular.otf' %}" rel="stylesheet" media="screen">
+    <title>{{title}}</title>
+</head>
+<body>
+
+<div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
+	<ul id="menu-barra-temp" style="list-style:none;">
+      <li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED"><a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a></li>
+	  </ul>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 main text-center">
+      <div>
+        <img class="logo" src="{% static 'img/big_logo.png' %}"/>
+      </div>
+      <div>
+        <h4 class="explanation">{{ explanation }}</h4>
+      </div>
+    </div>
+     <div class="row we">
+    <div class="we-header text-center">Quem somos nós</div>
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="we-main text-center">
+        <div><h4>Nossa missão:</h4></div>
+        <div><h6>O projeto “comunidade de programação” visa alavancar a aprendizagem de programação de jovens e adultos através de abordagens democráticas, e explorar maneiras de tornar a programação acessível a um público numeroso e diverso usando e-learning. Através da comunidade de programação, a universidade poderá dialogar com a sociedade acerca da demanda social por saberes em computação, já estudada em outros países porém ainda pouco considerada no Brasil.</h6></div>
+        <div><h5>Contato : comunidadedeprogramacao@dcc.ufrj.br</h5></div>
+      </div>
+      </div>
+    <div class="col-md-2"></div>
+  </div>
+ </div>
+  <app-we></app-we>
+</div>
+
+<script defer="defer" src="//barra.brasil.gov.br/barra.js" type="text/javascript"></script>
+</body>
+</html>

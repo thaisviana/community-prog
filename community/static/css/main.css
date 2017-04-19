@@ -1,0 +1,71 @@
+@font-face {
+	font-family: Pluto;
+	src: url('../fonts/Pluto-Regular.otf');
+}
+@font-face {
+	font-family: Pluto-Bold;
+	src: url('../fonts/Pluto-Bold.otf');
+}
+@font-face {
+	font-family: Pluto-Heavy;
+	src: url('../fonts/Pluto-Heavy.otf');
+}
+@font-face {
+	font-family: Pluto-Light;
+	src: url('../fonts/Pluto-Light.otf');
+}
+@font-face {
+	font-family: PlutoSansLight;
+	src: url('../fonts/PlutoSansLight.otf');
+}
+
+.we-header{
+  color: white;
+  font-size: large;
+  opacity: 0.6;
+  background-color: gray;
+}
+.we-main{
+}
+.we{
+    padding: 20px;
+    font-stretch: ultra-expanded;
+    font-family: Pluto-Light;
+    font-size: medium;
+}
+
+.header-title{
+  color : white;
+}
+
+.header-title{list-style-type: none;}
+.logo{
+  width: 20%;
+  animation-name: example;
+  animation-duration: 10s;
+  opacity: 0.5;
+  padding-left: 38%;
+}
+
+.main{
+  width: 80%;
+  height: 90%;
+  padding: 100px 20px 20px 80px;
+}
+.explanation{
+  font-family: Pluto;
+  text-align: justify;
+  text-justify: inter-word;
+  font-stretch: ultra-expanded;
+  width: 100%;
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1.0;
+    }
+}
