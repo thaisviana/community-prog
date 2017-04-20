@@ -4,14 +4,14 @@ Site da plataforma comunidade de programação, um projeto de extensão da UFRJ 
 
 ### Instruções
 
-1. Instalar o Python 3.5
+1- Instalar o Python 3.5
 
-2. Criar o env com o virtualenv para o projeto
+2- Criar o env com o virtualenv para o projeto
 
-3. Fazer o checkout do projeto
+3- Fazer o checkout do projeto
 
-4. Instalar as dependencias : pip install -r requirements.txt
+4- Instalar as dependencias : pip install -r requirements.txt
 
-5. Rodar as migrações
+5- Rodar as migrações
 
-6. Subir o servidor : python manage.py runserver
+6- Subir o servidor : python manage.py runserver
