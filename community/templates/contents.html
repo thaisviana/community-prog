@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ title }}</title>
+    </head>
+
+
+    <body>
+        <div>
+            {% for pdf in pdfs %}
+            <div>
+                <a href="/{{ pdf.file }}">Name : {{ pdf.name }}</a>
+            </div>
+            {% empty %}
+                <p> There are no contents available. </p>
+            {% endfor %}
+        </div>
+
+        <div>
+            {% for video in videos %}
+            <div>
+                <a href="/content/video/{{ video.id }}">Name : {{ video.name }}</a>
+            </div>
+            {% empty %}
+                <p> There are no contents available. </p>
+            {% endfor %}
+        </div>
+
+    </body>
+</html>

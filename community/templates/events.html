@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+{% for event in events %}
+<div>
+    <div>Name : {{ event.name }}</div>
+    <div>Description : {{ event.description }}</div>
+    <div>Link : {{ event.link }}</div>
+</div>
+{% empty %}
+    <p> There are no events available. </p>
+{% endfor %}
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>{{ title }}</title>
+</head>
+<body>
+content
+<p>{{ content.name }}</p>
+
+{% if type == 'video' %}
+    <a href="{{ content.url }}">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ content.video_id }}"
+            frameborder="0" allowfullscreen></iframe>
+    </a>
+{% endif %}
+
+
+{% if type == 'pdf' %}
+    <p>pdf</p>
+{% endif %}
+
+<p>{{ content.description }}</p>
+
+<p>{{ content.category }}</p>
+
+</body>
+</html>

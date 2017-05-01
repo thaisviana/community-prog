@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+{% for category in categories %}
+<div>
+    <a href="/contents/id/{{ category.id }}">Name : {{ category.name }}</a>
+</div>
+{% empty %}
+    <p> There are no categories available. </p>
+{% endfor %}</html>
